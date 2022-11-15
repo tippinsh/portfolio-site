@@ -16,7 +16,7 @@
                 <img
                     src="../assets/self.jpg"
                     alt="b&w photo of author, smiling"
-                    class="rounded-full w-72 h-72"
+                    class="rounded-full w-64 h-64 md:w-72 md:h-72"
                 />
             </div>
         </div>
