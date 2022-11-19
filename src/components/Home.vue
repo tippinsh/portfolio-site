@@ -2,49 +2,43 @@
     <the-header></the-header>
     <section class="h-full">
         <div
-            class="flex flex-col font-serif md:flex-row md:justify-end md:content-center w-full pt-36"
+            class="flex flex-col font-serif md:flex-row md:justify-end md:content-center w-full pt-36 h-full pb-36 pl-10"
         >
-            <div class="p-6 md:p-2 md:w-1/2 md:pl-16">
+            <div class="p-6 md:p-2 md:w-1/2 md:pl-16 h-full">
                 <p class="text-sm md:text-lg pb-2">Hello, my name is Holly</p>
                 <h1 class="text-2xl md:text-5xl">
-                    I'm an aspiring
+                    I'm an aspiring<br />
                     <span class="text-[#FBC33D]">web developer</span>
                     based in the United Kingdom.
                 </h1>
             </div>
         </div>
 
-        <div class="relative w-full mt-80">
-            <div class="absolute bottom-0 left-0 w-1/2 h-96">
+        <div class="relative w-full mt-80 h-full">
+            <div class="absolute bottom-0 left-0 w-1/2">
                 <img
                     src="../assets/tall-building.jpg"
                     alt=""
                     class="object-contain"
                 />
-                <!-- <p>
-                    Lancashire based front-end web developer focusing on
-                    creating clean, user-focused experiences
-                </p> -->
             </div>
         </div>
     </section>
     <section>
         <div class="grid grid-cols-2 h-full bg-[#0F1923]">
-            <div
-                class="flex justify-center flex-col text-right pr-24 gap-4 text-[#F7E9E6]"
-            >
-                <h1 class="text-xl font-extrabold text-[#F7E9E6]">ABOUT</h1>
-                <div class="my-4 h-8">
+            <div class="flex justify-center flex-col text-right pr-24 gap-4">
+                <h1 class="text-xl font-extrabold text-[#FBC33D]">ABOUT</h1>
+                <div class="my-4 h-12">
                     <glitched-writer
                         :text="phrases"
                         :options="options"
                         :queue="{
                             loop: true,
                         }"
-                        class="text-4xl"
+                        class="text-5xl font-serif text-[#F7E9E6]"
                     />
                 </div>
-                <p>
+                <p class="text-zinc-400 text-sm tracking-tight">
                     Lancashire-based front-end developer. <br />
                     Creating user-focused, clean designs with Vue.
                 </p>
@@ -52,7 +46,7 @@
             <div class="flex justify-center content-center m-0">
                 <img
                     src="../assets/self4.jpg"
-                    alt="b&w photo of author, smiling"
+                    alt="b&w photo of author looking out over city"
                     class="h-full"
                 />
             </div>
@@ -79,12 +73,7 @@
 export default {
     data() {
         return {
-            phrases: [
-                'Developer',
-                'Music-lover',
-                'Problem-solver',
-                'Dog-mother',
-            ],
+            phrases: ['Developer', 'Music-lover', 'Problem-solver', 'Bookworm'],
             options: {
                 interval: [100, 250],
                 delay: 0,
