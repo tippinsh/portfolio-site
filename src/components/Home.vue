@@ -1,7 +1,25 @@
 <template>
     <the-header></the-header>
     <section class="h-full">
-        <div
+        <div class="grid grid-cols-2 h-full mt-40">
+            <div class="h-full w-full">
+                <img
+                    src="../assets/tall-building.jpg"
+                    alt=""
+                    class="object-contain"
+                />
+            </div>
+            <div class="h-full font-serif pl-12">
+                <p class="text-sm md:text-lg pb-2">Hello, my name's Holly</p>
+                <h1 class="text-2xl md:text-5xl">
+                    I'm an aspiring<br />
+                    <span class="text-[#FBC33D]">web developer</span><br />
+                    based in the United Kingdom.
+                </h1>
+            </div>
+        </div>
+
+        <!-- <div
             class="flex flex-col font-serif md:flex-row md:justify-end md:content-center w-full pt-36 h-full pb-36 pl-10"
         >
             <div class="p-6 md:p-2 md:w-1/2 md:pl-16 h-full">
@@ -22,7 +40,7 @@
                     class="object-contain"
                 />
             </div>
-        </div>
+        </div> -->
     </section>
     <section>
         <div class="grid grid-cols-2 h-full bg-[#0F1923]">
@@ -73,7 +91,13 @@
 export default {
     data() {
         return {
-            phrases: ['Developer', 'Music-lover', 'Problem-solver', 'Bookworm'],
+            phrases: [
+                'Developer',
+                'Music-lover',
+                'Problem-solver',
+                'Bookworm',
+                'Programmer',
+            ],
             options: {
                 interval: [100, 250],
                 delay: 0,
