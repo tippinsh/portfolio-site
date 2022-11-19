@@ -13,27 +13,27 @@
                 </h1>
             </div>
             <div class="pr-24 self-end">
-                <img
+                <!-- <img
                     src="../assets/self.jpg"
                     alt="b&w photo of author, smiling"
                     class="rounded-full w-64 h-64 md:w-72 md:h-72"
-                />
+                /> -->
             </div>
         </div>
     </section>
-    <div class="relative p-16">
+    <!-- <div class="relative p-16">
         <hr class="w-1/2 absolute right-0" />
         <br /><br />
         <hr class="w-3/4 absolute right-0" />
-    </div>
+    </div> -->
 
-    <section>
+    <!-- <section>
         <h1 class="font-sans text-xl text-center md:text-4xl">
             SKILLS AND ACADEMIC BACKGROUND
         </h1>
         <hr class="my-3 mx-auto bg-[#FBC33D] h-1 w-32 border-none" />
         <h2 class="font-serif text-center text-lg pt-4">Education</h2>
-    </section>
+    </section> -->
 </template>
 
 <script></script>
