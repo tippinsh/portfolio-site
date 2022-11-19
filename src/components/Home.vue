@@ -1,6 +1,6 @@
 <template>
     <the-header></the-header>
-    <section>
+    <section class="h-full">
         <div
             class="flex flex-col font-serif md:flex-row md:justify-end md:content-center w-full pt-36"
         >
@@ -14,13 +14,8 @@
             </div>
         </div>
 
-        <!-- <img
-                    src="../assets/self.jpg"
-                    alt="b&w photo of author, smiling"
-                    class="rounded-full w-64 h-64 md:w-72 md:h-72"
-                /> -->
-        <div class="relative w-full h-60 mt-44">
-            <div class="absolute bottom-0 left-0 w-1/2">
+        <div class="relative w-full mt-80">
+            <div class="absolute bottom-0 left-0 w-1/2 h-96">
                 <img
                     src="../assets/tall-building.jpg"
                     alt=""
@@ -33,10 +28,42 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="grid grid-cols-2 h-full bg-[#0F1923]">
+            <div
+                class="flex justify-center flex-col text-right pr-24 gap-4 text-[#F7E9E6]"
+            >
+                <h1 class="text-xl font-extrabold text-[#F7E9E6]">ABOUT</h1>
+                <div class="my-4 h-8">
+                    <glitched-writer
+                        :text="phrases"
+                        :options="options"
+                        :queue="{
+                            loop: true,
+                        }"
+                        class="text-4xl"
+                    />
+                </div>
+                <p>
+                    Lancashire-based front-end developer. <br />
+                    Creating user-focused, clean designs with Vue.
+                </p>
+            </div>
+            <div class="flex justify-center content-center m-0">
+                <img
+                    src="../assets/self4.jpg"
+                    alt="b&w photo of author, smiling"
+                    class="h-full"
+                />
+            </div>
+        </div>
+    </section>
+
     <!-- <div class="relative p-16">
         <hr class="w-1/2 absolute right-0" />
         <br /><br />
         <hr class="w-3/4 absolute right-0" />
+        class="rounded-full w-64 h-64 md:w-72 md:h-72"
     </div> -->
 
     <!-- <section>
@@ -48,4 +75,29 @@
     </section> -->
 </template>
 
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            phrases: [
+                'Developer',
+                'Music-lover',
+                'Problem-solver',
+                'Dog-mother',
+            ],
+            options: {
+                interval: [100, 250],
+                delay: 0,
+                steps: 0,
+                changeChance: 0,
+                maxGhosts: 0,
+                oneAtATime: 1,
+                glyphs: '',
+                glyphsFromText: false,
+                fillSpace: false,
+                mode: 'erase_smart',
+            },
+        };
+    },
+};
+</script>

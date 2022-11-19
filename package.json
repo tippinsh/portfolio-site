@@ -14,7 +14,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
+    "glitched-writer": "^2.0.29",
     "vue": "^3.2.41",
+    "vue-glitched-writer": "^1.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

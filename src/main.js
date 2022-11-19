@@ -7,6 +7,9 @@ import TheHeader from './components/TheHeader.vue';
 import App from './App.vue';
 import './index.css';
 
+//Text scrambler
+import GlitchedWriter from 'vue-glitched-writer';
+
 // Font Awesome set-up
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -42,6 +45,7 @@ const router = createRouter({
 
 const app = createApp(App);
 
+app.component('glitched-writer', GlitchedWriter);
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.component('the-header', TheHeader);
 app.use(router);
