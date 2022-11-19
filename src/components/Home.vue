@@ -1,8 +1,8 @@
 <template>
     <the-header></the-header>
     <section class="h-full">
-        <div class="grid grid-cols-2 h-full mt-40">
-            <div class="h-full w-full">
+        <div class="grid grid-cols-2 h-full mt-48">
+            <div class="h-full w-full pt-16">
                 <img
                     src="../assets/tall-building.jpg"
                     alt=""
@@ -57,8 +57,11 @@
                     />
                 </div>
                 <p class="text-zinc-400 text-sm tracking-tight">
-                    Lancashire-based front-end developer. <br />
-                    Creating user-focused, clean designs with Vue.
+                    Lancashire-based developer. <br />
+                    Passionate programmer with an emphasis on front-end
+                    development and user-focused design.<br />
+                    CODE Lancashire Bootcamp student. <br />
+                    MSc Computer Science student at Northumbria University.
                 </p>
             </div>
             <div class="flex justify-center content-center m-0">
@@ -68,6 +71,17 @@
                     class="h-full"
                 />
             </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="pl-20 mt-10 text-4xl font-serif">Projects</h1>
+        <div class="grid grid-cols-4 justify-items-center p-20">
+            <div>
+                <img src="../assets/sokoban-front.jpg" alt="" />
+            </div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
         </div>
     </section>
 
