@@ -53,32 +53,32 @@
     <section>
         <h1 class="pl-14 mt-10 text-4xl font-serif">Recent Projects</h1>
         <div class="grid grid-cols-4 justify-items-center p-10 gap-4">
-            <div class="p-4 h-full drop-shadow-2xl">
+            <div class="p-4 h-full w-full">
                 <img
                     src="../assets/sokoban-front.jpg"
                     alt=""
-                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                    class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 object-fill"
                 />
             </div>
-            <div class="p-4">
+            <div class="p-4 h-full w-full">
                 <img
                     src="../assets/drug_buddy.png"
                     alt=""
-                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                    class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105"
                 />
             </div>
-            <div class="p-4">
+            <div class="p-4 h-full w-full">
                 <img
                     src="../assets/trello.png"
                     alt=""
-                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                    class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105"
                 />
             </div>
-            <div class="p-4">
+            <div class="p-4 h-full w-full">
                 <img
                     src="../assets/houseplant.png"
                     alt=""
-                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                    class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 object-fill"
                 />
             </div>
         </div>
