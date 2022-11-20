@@ -42,11 +42,11 @@
                 </p>
             </div>
             <div class="flex justify-center content-center m-0">
-                <!-- <img
+                <img
                     src="../assets/edinburgh.jpg"
                     alt="b&w photo of author looking out over city"
                     class="h-full"
-                /> -->
+                />
             </div>
         </div>
     </section>
