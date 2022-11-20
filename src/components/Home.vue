@@ -51,35 +51,47 @@
         </div>
     </section>
     <section>
-        <h1 class="pl-20 mt-10 text-4xl font-serif">Projects</h1>
-        <div class="grid grid-cols-4 justify-items-center p-20">
-            <div>
-                <img src="../assets/sokoban-front.jpg" alt="" />
+        <h1 class="pl-14 mt-10 text-4xl font-serif">Recent Projects</h1>
+        <div class="grid grid-cols-4 justify-items-center p-10 gap-4">
+            <div class="p-4 h-full drop-shadow-2xl">
+                <img
+                    src="../assets/sokoban-front.jpg"
+                    alt=""
+                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                />
             </div>
-            <div>Box 2</div>
-            <div>Box 3</div>
-            <div>Box 4</div>
+            <div class="p-4">
+                <img
+                    src="../assets/drug_buddy.png"
+                    alt=""
+                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                />
+            </div>
+            <div class="p-4">
+                <img
+                    src="../assets/trello.png"
+                    alt=""
+                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                />
+            </div>
+            <div class="p-4">
+                <img
+                    src="../assets/houseplant.png"
+                    alt=""
+                    class="h-full cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:blur-sm"
+                />
+            </div>
         </div>
     </section>
-
-    <!-- <div class="relative p-16">
-        <hr class="w-1/2 absolute right-0" />
-        <br /><br />
-        <hr class="w-3/4 absolute right-0" />
-        class="rounded-full w-64 h-64 md:w-72 md:h-72"
-    </div> -->
-
-    <!-- <section>
-        <h1 class="font-sans text-xl text-center md:text-4xl">
-            SKILLS AND ACADEMIC BACKGROUND
-        </h1>
-        <hr class="my-3 mx-auto bg-[#FBC33D] h-1 w-32 border-none" />
-        <h2 class="font-serif text-center text-lg pt-4">Education</h2>
-    </section> -->
 </template>
 
 <script>
+import ProjectModal from './ProjectModal.vue';
+
 export default {
+    components: {
+        'projects-modal': ProjectModal,
+    },
     data() {
         return {
             phrases: [
