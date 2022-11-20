@@ -31,17 +31,7 @@
                 </h1>
             </div>
         </div>
-
-        <div class="relative w-full mt-80 h-full">
-            <div class="absolute bottom-0 left-0 w-1/2">
-                <img
-                    src="../assets/tall-building.jpg"
-                    alt=""
-                    class="object-contain"
-                />
-            </div>
-        </div> -->
-    </section>
+    --></section>
     <section>
         <div class="grid grid-cols-2 h-full bg-[#0F1923]">
             <div class="flex justify-center flex-col text-right pr-24 gap-4">
