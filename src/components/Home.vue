@@ -18,20 +18,7 @@
                 </h1>
             </div>
         </div>
-
-        <!-- <div
-            class="flex flex-col font-serif md:flex-row md:justify-end md:content-center w-full pt-36 h-full pb-36 pl-10"
-        >
-            <div class="p-6 md:p-2 md:w-1/2 md:pl-16 h-full">
-                <p class="text-sm md:text-lg pb-2">Hello, my name is Holly</p>
-                <h1 class="text-2xl md:text-5xl">
-                    I'm an aspiring<br />
-                    <span class="text-[#FBC33D]">web developer</span>
-                    based in the United Kingdom.
-                </h1>
-            </div>
-        </div>
-    --></section>
+    </section>
     <section>
         <div class="grid grid-cols-2 h-full bg-[#0F1923]">
             <div class="flex justify-center flex-col text-right pr-24 gap-4">
