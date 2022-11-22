@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <div
-            class="flex flex-row justify-end gap-4 p-6 font-sans text-sm md:text-xm md:mr-8 top-0 fixed w-full"
+            class="flex flex-row justify-end gap-4 p-6 font-sans text-xs md:text-sm md:mr-8 top-0 fixed w-full"
         >
             <p class="hover:scale-105 cursor-pointer">ABOUT</p>
             <router-link to="/projects" class="hover:scale-105 cursor-pointer"
