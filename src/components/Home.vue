@@ -51,7 +51,9 @@
                     MSc Computer Science student at Northumbria University.
                 </p>
             </div>
-            <div class="md:flex md:justify-center md:content-center md:m-0">
+            <div
+                class="md:flex md:justify-center md:content-center md:m-0 col-span-1"
+            >
                 <img
                     src="../assets/lookingout.jpg"
                     alt="b&w photo of author looking out over city"
@@ -88,6 +90,7 @@
                     src="../assets/trello.png"
                     alt=""
                     class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105"
+                    @click="trelloModal = true"
                 />
             </div>
             <div class="p-4 h-full w-full">
@@ -107,16 +110,20 @@
         v-show="calculatorModal"
         @close-calc="calculatorModal = false"
     ></calculator-modal>
+    <trello-modal v-show="trelloModal" @close-trello="trelloModal = false">
+    </trello-modal>
 </template>
 
 <script>
 import SokobanModal from './SokobanModal.vue';
 import CalculatorModal from './CalculatorModal.vue';
+import TrelloModal from './TrelloModal.vue';
 
 export default {
     components: {
         'sokoban-modal': SokobanModal,
         'calculator-modal': CalculatorModal,
+        'trello-modal': TrelloModal,
     },
     data() {
         return {
@@ -141,6 +148,7 @@ export default {
             },
             sokobanModal: false,
             calculatorModal: false,
+            trelloModal: false,
         };
     },
     methods: {},
