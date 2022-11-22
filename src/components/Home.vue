@@ -55,7 +55,7 @@
                 <img
                     src="../assets/lookingout.jpg"
                     alt="b&w photo of author looking out over city"
-                    class="h-full"
+                    class="h-[600px]"
                 />
             </div>
         </div>
