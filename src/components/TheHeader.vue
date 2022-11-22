@@ -8,16 +8,21 @@
                 ><p>PROJECTS</p></router-link
             >
             <p class="hover:scale-105 cursor-pointer">CONTACT</p>
-            <font-awesome-icon
-                :icon="['fab', 'github']"
-                size="lg"
-                class="ml-4 hover:scale-125 ease-in-out duration-[600ms] cursor-pointer"
-            />
-            <font-awesome-icon
-                :icon="['fab', 'linkedin']"
-                size="lg"
-                class="hover:scale-125 ease-in-out duration-[600ms] cursor-pointer"
-            />
+            <a href="https://github.com/htippins" target="_blank">
+                <font-awesome-icon
+                    :icon="['fab', 'github']"
+                    size="lg"
+                    class="ml-4 hover:scale-125 ease-in-out duration-[600ms] cursor-pointer"
+            /></a>
+            <a
+                href="https://www.linkedin.com/in/holly-tippins/"
+                target="_blank"
+            >
+                <font-awesome-icon
+                    :icon="['fab', 'linkedin']"
+                    size="lg"
+                    class="hover:scale-125 ease-in-out duration-[600ms] cursor-pointer"
+            /></a>
         </div>
     </div>
 </template>
