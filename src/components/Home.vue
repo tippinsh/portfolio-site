@@ -80,6 +80,7 @@
                     src="../assets/drug_buddy.png"
                     alt=""
                     class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105"
+                    @click="calculatorModal = true"
                 />
             </div>
             <div class="p-4 h-full w-full">
@@ -102,14 +103,20 @@
         v-show="sokobanModal"
         @close-sokoban="sokobanModal = false"
     ></sokoban-modal>
+    <calculator-modal
+        v-show="calculatorModal"
+        @close-calc="calculatorModal = false"
+    ></calculator-modal>
 </template>
 
 <script>
 import SokobanModal from './SokobanModal.vue';
+import CalculatorModal from './CalculatorModal.vue';
 
 export default {
     components: {
         'sokoban-modal': SokobanModal,
+        'calculator-modal': CalculatorModal,
     },
     data() {
         return {
@@ -133,6 +140,7 @@ export default {
                 mode: 'erase_smart',
             },
             sokobanModal: false,
+            calculatorModal: false,
         };
     },
     methods: {},
