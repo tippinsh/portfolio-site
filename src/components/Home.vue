@@ -58,6 +58,7 @@
                     src="../assets/sokoban-front.jpg"
                     alt=""
                     class="cursor-pointer transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 object-fill"
+                    @click="sokobanModal = true"
                 />
             </div>
             <div class="p-4 h-full w-full">
@@ -83,14 +84,18 @@
             </div>
         </div>
     </section>
+    <sokoban-modal
+        v-show="sokobanModal"
+        @close-sokoban="sokobanModal = false"
+    ></sokoban-modal>
 </template>
 
 <script>
-import ProjectModal from './ProjectModal.vue';
+import SokobanModal from './SokobanModal.vue';
 
 export default {
     components: {
-        'projects-modal': ProjectModal,
+        'sokoban-modal': SokobanModal,
     },
     data() {
         return {
@@ -113,7 +118,9 @@ export default {
                 fillSpace: false,
                 mode: 'erase_smart',
             },
+            sokobanModal: false,
         };
     },
+    methods: {},
 };
 </script>
