@@ -18,12 +18,26 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 /* import specific icons */
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+import { faUserSecret, faCode } from '@fortawesome/free-solid-svg-icons';
 
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+    faGithub,
+    faLinkedin,
+    faSquareJs,
+    faLaravel,
+    faVuejs,
+} from '@fortawesome/free-brands-svg-icons';
 
 /* add icons to the library */
-library.add(faUserSecret, faGithub, faLinkedin);
+library.add(
+    faUserSecret,
+    faGithub,
+    faLinkedin,
+    faCode,
+    faSquareJs,
+    faLaravel,
+    faVuejs
+);
 
 const routes = [
     {

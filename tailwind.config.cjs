@@ -9,6 +9,7 @@ module.exports = {
             },
             backgroundImage: {
                 'hero-background': "url('/src/assets/background-img.jpg'",
+                sokoban: "url('/src/assets/sokoban-front.jpg')",
             },
         },
     },
