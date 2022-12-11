@@ -105,19 +105,19 @@
                 <h2 class="text-xl">House plant calculator</h2>
             </div>
         </div>
-        <div class="flex justify-center align-center w-full pt-6 pb-6">
+        <!-- <div class="flex justify-center align-center w-full pt-6 pb-6">
             <font-awesome-icon :icon="['fa', 'code']" size="2xl" class="" />
         </div>
         <div class="flex justify-center gap-4">
             <font-awesome-icon :icon="['fab', 'square-js']" size="xl" />
             <font-awesome-icon :icon="['fab', 'vuejs']" size="xl" />
             <font-awesome-icon :icon="['fab', 'laravel']" size="xl" />
-        </div>
+        </div> -->
     </section>
-    <section class="bg-[#0F1923]">
+    <section class="bg-[#0F1923] pb-20">
         <div>
             <h1
-                class="text-center mt-10 mb-10 md:mb-2 text-2xl md:text-4xl font-serif pt-10 text-white"
+                class="text-center mb-10 md:mb-2 text-2xl md:text-4xl font-serif pt-10 text-white pb-12"
             >
                 Contact
             </h1>
@@ -129,19 +129,23 @@
                     <input
                         type="text"
                         placeholder="Name"
-                        class="py-1 outline-none bg-inherit text-white border-b-2 border-white-200"
+                        class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm"
                     />
                     <input
                         type="email"
                         placeholder="Email"
-                        class="py-1 outline-none bg-inherit text-white border-b-2 border-white-200"
+                        class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm"
                     />
-                    <input
-                        type="textarea"
+                    <textarea
+                        type="text"
                         placeholder="Message"
-                        class="py-1 outline-none bg-inherit text-white border-b-2 border-white-200"
+                        rows="4"
+                        cols="33"
+                        class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm resize-none"
                     />
-                    <button>Shoot</button>
+                    <button class="px-2 py-1 self-end text-slate-300 text-sm">
+                        Send &#8594;
+                    </button>
                 </form>
             </div>
         </div>
