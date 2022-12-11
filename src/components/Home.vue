@@ -2,6 +2,7 @@
     <the-header
         @aboutAnchor="scrollToAnchorPoint('about')"
         @projectsAnchor="scrollToAnchorPoint('projects')"
+        @contactAnchor="scrollToAnchorPoint('contact')"
     ></the-header>
     <section class="h-[400px] md:h-full">
         <div
@@ -71,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section ref="projects">
+    <section ref="projects" class="pb-10">
         <h1
             class="text-center mt-10 mb-10 md:mb-2 text-2xl md:text-4xl font-serif"
         >
@@ -114,14 +115,14 @@
             <font-awesome-icon :icon="['fab', 'laravel']" size="xl" />
         </div> -->
     </section>
-    <section class="bg-[#0F1923] pb-20">
+    <section class="bg-[#0F1923] pb-3" ref="contact">
         <div>
             <h1
                 class="text-center mb-10 md:mb-2 text-2xl md:text-4xl font-serif pt-10 text-white pb-12"
             >
-                Contact
+                Let's chat
             </h1>
-            <div class="flex justify-center">
+            <div class="flex justify-center pb-20">
                 <form
                     action=""
                     class="flex flex-col w-1/3 gap-4 appearance-none"
@@ -147,6 +148,28 @@
                         Send &#8594;
                     </button>
                 </form>
+            </div>
+        </div>
+        <div class="flex justify-between px-4 text-slate-100 text-sm">
+            <div>
+                <p>Copyright &copy Holly Tippins All Rights Reserved</p>
+            </div>
+            <div>
+                <a href="https://github.com/htippins" target="_blank">
+                    <font-awesome-icon
+                        :icon="['fab', 'github']"
+                        size="lg"
+                        class="ml-4 hover:scale-125 ease-in-out duration-[600ms] cursor-pointer pr-3"
+                /></a>
+                <a
+                    href="https://www.linkedin.com/in/holly-tippins/"
+                    target="_blank"
+                >
+                    <font-awesome-icon
+                        :icon="['fab', 'linkedin']"
+                        size="lg"
+                        class="hover:scale-125 ease-in-out duration-[600ms] cursor-pointer"
+                /></a>
             </div>
         </div>
     </section>

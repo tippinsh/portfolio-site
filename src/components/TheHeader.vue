@@ -15,7 +15,12 @@
             >
                 PROJECTS
             </p>
-            <p class="hover:scale-105 cursor-pointer">CONTACT</p>
+            <p
+                class="hover:scale-105 cursor-pointer"
+                @click="$emit('contactAnchor')"
+            >
+                CONTACT
+            </p>
             <a href="https://github.com/htippins" target="_blank">
                 <font-awesome-icon
                     :icon="['fab', 'github']"

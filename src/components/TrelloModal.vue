@@ -10,7 +10,7 @@
         >
             <div id="container" class="flex justify-center flex-col gap-4">
                 <h1 class="text-center font-serif text-lg">
-                    Trello inspired Kanban board
+                    Trello inspired Kanban board (WIP)
                 </h1>
                 <div>
                     <p>> Built with Vue.js</p>
