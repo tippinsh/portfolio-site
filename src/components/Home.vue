@@ -9,11 +9,7 @@
             class="flex justify-center md:grid md:grid-cols-2 md:h-full md:mt-48"
         >
             <div class="hidden md:block md:h-full md:w-full md:pt-16">
-                <img
-                    src="../assets/tall-building.jpg"
-                    alt=""
-                    class="object-contain"
-                />
+                <img src="../assets/tall-building.jpg" class="object-contain" />
             </div>
             <div class="mt-32 md:h-full font-serif md:pl-12">
                 <p class="text-sm md:text-lg pb-2">Hello, my name's Holly</p>
@@ -124,27 +120,38 @@
             </h1>
             <div class="flex justify-center pb-20">
                 <form
-                    action=""
+                    ref="form"
+                    @submit.prevent="sendEmail"
                     class="flex flex-col w-1/3 gap-4 appearance-none"
                 >
                     <input
                         type="text"
+                        name="from_name"
                         placeholder="Name"
+                        :value="inputFieldReset"
                         class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm"
                     />
                     <input
                         type="email"
                         placeholder="Email"
+                        name="sender_email"
+                        :value="inputFieldReset"
                         class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm"
                     />
                     <textarea
                         type="text"
+                        :value="inputFieldReset"
+                        name="message"
                         placeholder="Message"
                         rows="4"
                         cols="33"
                         class="py-2 outline-none bg-inherit text-white border-b-2 border-white-200 tracking-tight text-sm resize-none"
                     />
-                    <button class="px-2 py-1 self-end text-slate-300 text-sm">
+                    <button
+                        class="px-2 py-1 self-end text-slate-300 text-sm"
+                        type="submit"
+                        name="send"
+                    >
                         Send &#8594;
                     </button>
                 </form>
@@ -194,6 +201,7 @@ import SokobanModal from './SokobanModal.vue';
 import CalculatorModal from './CalculatorModal.vue';
 import TrelloModal from './TrelloModal.vue';
 import HousePlantModal from './HousePlantModal.vue';
+import emailjs from 'emailjs-com';
 
 export default {
     components: {
@@ -227,12 +235,31 @@ export default {
             calculatorModal: false,
             trelloModal: false,
             hpmodal: false,
+            inputFieldReset: null,
         };
     },
     methods: {
         scrollToAnchorPoint(refName) {
             const el = this.$refs[refName];
             el.scrollIntoView({ behaviour: 'smooth' });
+        },
+        sendEmail() {
+            emailjs
+                .sendForm(
+                    import.meta.env.VITE_SERVICE_ID,
+                    import.meta.env.VITE_TEMPLATE_ID,
+                    this.$refs.form,
+                    import.meta.env.VITE_USER_ID
+                )
+                .then(
+                    () => {
+                        alert('Message sent');
+                        this.$refs.form.reset();
+                    },
+                    (error) => {
+                        alert('Message not sent', error);
+                    }
+                );
         },
     },
 };
