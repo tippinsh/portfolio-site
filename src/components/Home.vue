@@ -114,7 +114,7 @@
     <section class="bg-[#0F1923] pb-3" ref="contact">
         <div>
             <h1
-                class="text-center mb-10 md:mb-2 text-2xl md:text-4xl font-serif pt-10 text-white pb-12"
+                class="text-center mb-2 md:mb-2 text-2xl md:text-4xl font-serif pt-10 text-white pb-12"
             >
                 Let's chat
             </h1>
@@ -122,7 +122,7 @@
                 <form
                     ref="form"
                     @submit.prevent="sendEmail"
-                    class="flex flex-col w-1/3 gap-4 appearance-none"
+                    class="flex flex-col md:w-1/3 gap-4 appearance-none"
                 >
                     <input
                         type="text"

@@ -5,7 +5,7 @@
     >
         <div
             id="modal"
-            class="bg-white h-[420px] w-1/3 mt-20 p-10 rounded-lg"
+            class="bg-white h-[550px] md:h-[350px] w-2/3 md:w-1/3 mt-20 p-10 rounded-lg"
             @click.stop
         >
             <div id="container" class="flex justify-center flex-col gap-4">
