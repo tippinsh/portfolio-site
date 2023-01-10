@@ -5,14 +5,17 @@
     >
         <div
             id="modal"
-            class="bg-white h-[450px] md:h-[350px] w-2/3 md:w-1/3 mt-20 p-10 rounded-lg"
+            class="bg-white h-[550px] md:h-[520px] w-10/12 md:w-1/3 mt-20 p-10 rounded-lg"
             @click.stop
         >
             <div id="container" class="flex justify-center flex-col gap-4">
                 <h1 class="text-center font-serif text-lg">Sokoban GUI</h1>
                 <div>
                     <p>> Built with Java</p>
-                    <p>> Object orientated principles</p>
+                    <p>
+                        > Final project for my object-orientated programming
+                        module
+                    </p>
                     <p>> Level chooser with 60 Sokoban levels</p>
                     <p>> Implements undo, clear, save and load features</p>
                     <div
