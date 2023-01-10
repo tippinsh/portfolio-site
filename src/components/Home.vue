@@ -81,13 +81,13 @@
                 class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="sokobanModal = true"
             >
-                <h2 class="text-lg md:text-xl">Sokoban GUI</h2>
+                <h2 class="text-md md:text-xl">Sokoban GUI</h2>
             </div>
             <div
                 class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="calculatorModal = true"
             >
-                <h2 class="text-lg md:text-xl">
+                <h2 class="text-md md:text-xl">
                     Medication calculator for nurses
                 </h2>
             </div>
@@ -95,13 +95,13 @@
                 class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="trelloModal = true"
             >
-                <h2 class="text-lg md:text-xl">Trello clone</h2>
+                <h2 class="text-md md:text-xl">Trello clone</h2>
             </div>
             <div
                 class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="hpmodal = true"
             >
-                <h2 class="text-lg md:text-xl">House plant calculator</h2>
+                <h2 class="text-md md:text-xl">House plant calculator</h2>
             </div>
         </div>
         <!-- <div class="flex justify-center align-center w-full pt-6 pb-6">
