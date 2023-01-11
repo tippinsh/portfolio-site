@@ -15,7 +15,7 @@
                 <p class="text-sm md:text-lg pb-2">Hello, my name's Holly</p>
                 <h1 class="text-2xl md:text-5xl">
                     I'm an aspiring<br />
-                    <span class="text-[#FBC33D]">web developer</span><br />
+                    <span class="text-[#FBC33D]">software developer</span><br />
                     based in the United <br />Kingdom.
                 </h1>
             </div>
@@ -45,8 +45,8 @@
                     class="text-zinc-400 pb-10 md:pb-0 text-sm md:text-sm tracking-tight"
                 >
                     Lancashire-based developer. <br />
-                    Passionate programmer with an emphasis on front-end
-                    development and user-focused design.<br />
+                    Enthusiastic programmer that loves to solve problems with
+                    code.<br />
                     <a
                         href="https://codelancashire.tech/"
                         target="_blank"
@@ -78,13 +78,13 @@
             class="grid grid-cols-1 gap-6 md:grid-cols-4 justify-items-center px-10 md:p-10 md:gap-6"
         >
             <div
-                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
+                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="sokobanModal = true"
             >
                 <h2 class="text-md md:text-xl">Sokoban GUI</h2>
             </div>
             <div
-                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
+                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="calculatorModal = true"
             >
                 <h2 class="text-md md:text-xl">
@@ -92,13 +92,13 @@
                 </h2>
             </div>
             <div
-                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
+                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="trelloModal = true"
             >
                 <h2 class="text-md md:text-xl">Trello clone</h2>
             </div>
             <div
-                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-full cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
+                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition ease-in-out delay-50 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="hpmodal = true"
             >
                 <h2 class="text-md md:text-xl">House plant calculator</h2>
