@@ -14,8 +14,7 @@
                 </h1>
                 <div>
                     <p>
-                        > Created with Vue.js on the front-end and Laravel on
-                        the back-end <br />
+                        > Built with Vue.js and Laravel <br />
                         > The full stack version of this application is not
                         currently hosted online but you can view the source code
                         here: <br />
@@ -41,10 +40,9 @@
                             href="https://tremolo-todo.netlify.app"
                             target="_blank"
                             class="hover:bg-[#FBC33D]"
-                            >here.
-                        </a>
-                        However currently lacks any functionality at the moment.
-                        I plan to host the full site in the near future.
+                            >here </a
+                        >. However currently lacks any functionality at the
+                        moment. I plan to host the full site in the near future.
                     </p>
                 </div>
             </div>
