@@ -48,7 +48,7 @@
                     Enthusiastic programmer that loves to solve problems with
                     code.<br />
                     <a
-                        href="https://codelancashire.tech/"
+                        href="https://codelancashire.tech/programme/"
                         target="_blank"
                         class="text-[#FBC33D] hover:opacity-80"
                         >CODE Lancashire</a
