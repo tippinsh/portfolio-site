@@ -79,6 +79,12 @@
         >
             <div
                 class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
+                @click="lancsSearch = true"
+            >
+                <h2 class="text-md md:text-xl">LancsSearch</h2>
+            </div>
+            <div
+                class="flex items-center justify-center p-4 h-20 md:h-52 w-10/12 md:w-11/12 cursor-pointer transition-all ease-in delay-100 hover:translate-x-1 hover:scale-105 bg-stone-300 rounded-lg"
                 @click="sokobanModal = true"
             >
                 <h2 class="text-md md:text-xl">Sokoban GUI</h2>
@@ -196,6 +202,10 @@
         v-show="hpmodal"
         @close-house-plant="hpmodal = false"
     ></house-plant-modal>
+    <lancs-search
+        v-show="lancsSearch"
+        @close-search="lancsSearch = false"
+    ></lancs-search>
 </template>
 
 <script>
@@ -203,6 +213,7 @@ import SokobanModal from './SokobanModal.vue';
 import CalculatorModal from './CalculatorModal.vue';
 import TrelloModal from './TrelloModal.vue';
 import HousePlantModal from './HousePlantModal.vue';
+import LancsSearch from './LancsSearch.vue';
 import emailjs from 'emailjs-com';
 
 export default {
@@ -211,6 +222,7 @@ export default {
         'calculator-modal': CalculatorModal,
         'trello-modal': TrelloModal,
         'house-plant-modal': HousePlantModal,
+        'lancs-search': LancsSearch,
     },
     data() {
         return {
@@ -237,6 +249,7 @@ export default {
             calculatorModal: false,
             trelloModal: false,
             hpmodal: false,
+            lancsSearch: false,
             inputFieldReset: null,
         };
     },
