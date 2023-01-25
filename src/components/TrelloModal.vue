@@ -40,7 +40,7 @@
                             href="https://tremolo-todo.netlify.app"
                             target="_blank"
                             class="hover:bg-[#FBC33D]"
-                            >here </a
+                            >here</a
                         >. However currently lacks any functionality at the
                         moment. I plan to host the full site in the near future.
                     </p>
