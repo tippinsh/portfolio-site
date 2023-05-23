@@ -14,7 +14,7 @@
             <div class="mt-32 md:h-full font-serif md:pl-12">
                 <p class="text-sm md:text-lg pb-2">Hello, my name's Holly</p>
                 <h1 class="text-2xl md:text-5xl">
-                    I'm an aspiring<br />
+                    I'm a junior<br />
                     <span class="text-[#FBC33D]">software developer</span><br />
                     based in the United <br />Kingdom.
                 </h1>
